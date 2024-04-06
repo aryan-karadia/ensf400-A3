@@ -2,7 +2,7 @@ import requests
 import matplotlib.pyplot as plt
 
 # Number of requests to send
-num_requests = 1000
+num_requests = 10
 
 # URL to send requests to
 url = "http://192.168.58.2/"
@@ -25,4 +25,4 @@ plt.ylabel('Number of responses')
 plt.title('Distribution of responses from app-1 and app-2')
 
 # Save the figure as a PNG file
-plt.savefig('output.png')
+plt.savefig('Request-distribution.png')
