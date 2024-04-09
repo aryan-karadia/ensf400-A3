@@ -1,6 +1,10 @@
 # Assignment 3 File Submission Breakdown
 
-This readme provides a description of the steps and outputs that meet the requirements provided for the assignment.
+This readme provides a description of the steps and outputs that meet the requirements provided for the assignment. To start you run  `minikube start` which is followed by `minikube addons enable ingress` to ensure the addon ingress-controller is working. Then, you apply the files (just incase they have changed) by running the command:
+
+` kubectl apply -f app-1-dep.yaml -f app-1-svc.yaml -f app-2-dep.yaml -f app-2-svc.yaml -f nginx-dep.yaml -f nginx-svc.yaml -f nginx-configmap.yaml -f nginx-ingress.yaml -f app-1-ingress.yaml -f app-2-ingress.yaml`
+
+This ensures all config files are up to date.
 
 ## NGINX Deployment (10%)
 
